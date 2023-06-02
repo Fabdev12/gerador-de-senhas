@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gerador de Senhas</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gerador de Senhas</h1>
+
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required />
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" required />
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" required />
+        <button type="button" onclick="gerarSenha()">Gerar Senha</button>
+      </form>
+      <div id="senhaGerada"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
